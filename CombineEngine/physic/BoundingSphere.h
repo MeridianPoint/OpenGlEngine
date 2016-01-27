@@ -1,0 +1,23 @@
+#pragma once
+#include "Abstract_BoundingBox.h"
+class BoundingSphere :
+	public Abstract_BoundingBox
+{
+private:
+	Vec3f Position;
+	float radius;
+public:
+	BoundingSphere();
+	BoundingSphere(Vec3f vPosition, float fRadius) :Position(vPosition),radius(fRadius){}
+	~BoundingSphere();
+	bool checkCollision(BoundingSphere *pBoundSphere);
+
+
+	void Moveto(Vec3f pos){ Position = pos; }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+	//get set
+	void SetPosition(const Vec3f & Pos){ Position = Pos; }
+	Vec3f GetPos(){ return Position; }
+	float GetRadius(){ return radius; }                                                                     
+	
+};
+

@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B2DC8CF3-418B-4DA7-BF32-F246980CED3B}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>CombineEngine</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Animation\Boid.h" />
+    <ClInclude Include="Animation\CombineEngineAnimation.h" />
+    <ClInclude Include="Animation\Controller.h" />
+    <ClInclude Include="Animation\Crowd.h" />
+    <ClInclude Include="Animation\KeyFrameController.h" />
+    <ClInclude Include="Animation\PathFollowController.h" />
+    <ClInclude Include="Math\EngineMath.h" />
+    <ClInclude Include="Math\Eular_Angle.h" />
+    <ClInclude Include="Math\Fixed_Angle.h" />
+    <ClInclude Include="Math\Interpolation.h" />
+    <ClInclude Include="Math\Mat4.h" />
+    <ClInclude Include="Math\Quaternion.h" />
+    <ClInclude Include="Math\Vec2.h" />
+    <ClInclude Include="Math\Vec3.h" />
+    <ClInclude Include="physic\AABB_BoudingBox.h" />
+    <ClInclude Include="physic\Abstract_BoundingBox.h" />
+    <ClInclude Include="physic\BoundingSphere.h" />
+    <ClInclude Include="physic\CollisionDetection.h" />
+    <ClInclude Include="physic\CombinedEnginePhysics.h" />
+    <ClInclude Include="physic\Physical_Force.h" />
+    <ClInclude Include="physic\Physical_Object.h" />
+    <ClInclude Include="physic\RigidBodySimulator.h" />
+    <ClInclude Include="physic\Velocity.h" />
+    <ClInclude Include="Scene\Camera.h" />
+    <ClInclude Include="Scene\CombinedEngineScene.h" />
+    <ClInclude Include="Scene\Instance_Model.h" />
+    <ClInclude Include="Scene\Light.h" />
+    <ClInclude Include="Scene\Material.h" />
+    <ClInclude Include="Scene\Model.h" />
+    <ClInclude Include="Scene\Node.h" />
+    <ClInclude Include="Scene\Object.h" />
+    <ClInclude Include="Scene\Phong_Material.h" />
+    <ClInclude Include="Scene\Pivot.h" />
+    <ClInclude Include="Scene\Scene.h" />
+    <ClInclude Include="Scene\Spatial.h" />
+    <ClInclude Include="Scene\Transformation.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Animation\Boid.cpp" />
+    <ClCompile Include="Animation\Controller.cpp" />
+    <ClCompile Include="Animation\Crowd.cpp" />
+    <ClCompile Include="Animation\KeyFrameController.cpp" />
+    <ClCompile Include="Animation\PathFollowController.cpp" />
+    <ClCompile Include="CombineEngine.cpp" />
+    <ClCompile Include="Math\Eular_Angle.cpp" />
+    <ClCompile Include="Math\Fixed_Angle.cpp" />
+    <ClCompile Include="Math\Interpolation.cpp" />
+    <ClCompile Include="Math\Mat4.cpp" />
+    <ClCompile Include="Math\Quaternion.cpp" />
+    <ClCompile Include="Math\Vec2.cpp" />
+    <ClCompile Include="physic\AABB_BoudingBox.cpp" />
+    <ClCompile Include="physic\Abstract_BoundingBox.cpp" />
+    <ClCompile Include="physic\BoundingSphere.cpp" />
+    <ClCompile Include="physic\CollisionDetection.cpp" />
+    <ClCompile Include="physic\Physical_Force.cpp" />
+    <ClCompile Include="physic\Physical_Object.cpp" />
+    <ClCompile Include="physic\RigidBodySimulator.cpp" />
+    <ClCompile Include="physic\Velocity.cpp" />
+    <ClCompile Include="Scene\Camera.cpp" />
+    <ClCompile Include="Scene\Instance_Model.cpp" />
+    <ClCompile Include="Scene\Light.cpp" />
+    <ClCompile Include="Scene\Material.cpp" />
+    <ClCompile Include="Scene\Model.cpp" />
+    <ClCompile Include="Scene\Node.cpp" />
+    <ClCompile Include="Scene\Object.cpp" />
+    <ClCompile Include="Scene\Phong_Material.cpp" />
+    <ClCompile Include="Scene\Pivot.cpp" />
+    <ClCompile Include="Scene\Scene.cpp" />
+    <ClCompile Include="Scene\Spatial.cpp" />
+    <ClCompile Include="Scene\Transformation.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

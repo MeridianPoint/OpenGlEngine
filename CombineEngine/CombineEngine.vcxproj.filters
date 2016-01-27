@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\math">
+      <UniqueIdentifier>{1318358b-7966-47fd-a689-6f511203486b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\math">
+      <UniqueIdentifier>{50af6eaa-7939-40b5-9c95-4405d0bf3d52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Scene">
+      <UniqueIdentifier>{f54e8fd7-0363-4324-bca9-1326fc6c855a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene">
+      <UniqueIdentifier>{266e5dcd-9ace-4a49-98bd-a518ab8c25f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Animation">
+      <UniqueIdentifier>{b31dc7ec-d041-4e2a-b080-aeb436ec9037}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Physics">
+      <UniqueIdentifier>{42bde087-8b1d-4ffe-9659-7b57977f2db4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Physics">
+      <UniqueIdentifier>{5ec920d4-17e9-4491-9cff-2b4a16332e87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\import">
+      <UniqueIdentifier>{25dfd152-c88e-48ee-a6ca-a46bc4a956f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Material">
+      <UniqueIdentifier>{627672bb-8441-48aa-a23f-5e279c1370e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Animation">
+      <UniqueIdentifier>{3bc1b2c8-0a9f-4c85-b931-59a7cfa639d5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Eular_Angle.h">
+      <Filter>Header Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Fixed_Angle.h">
+      <Filter>Header Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Interpolation.h">
+      <Filter>Header Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Mat4.h">
+      <Filter>Header Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Quaternion.h">
+      <Filter>Header Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Vec2.h">
+      <Filter>Header Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Vec3.h">
+      <Filter>Header Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Camera.h">
+      <Filter>Header Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Instance_Model.h">
+      <Filter>Header Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Light.h">
+      <Filter>Header Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Material.h">
+      <Filter>Header Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Model.h">
+      <Filter>Header Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Node.h">
+      <Filter>Header Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Object.h">
+      <Filter>Header Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Phong_Material.h">
+      <Filter>Header Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Pivot.h">
+      <Filter>Header Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Scene.h">
+      <Filter>Header Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Spatial.h">
+      <Filter>Header Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Transformation.h">
+      <Filter>Header Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation\Boid.h">
+      <Filter>Header Files\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation\Controller.h">
+      <Filter>Header Files\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation\Crowd.h">
+      <Filter>Header Files\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation\KeyFrameController.h">
+      <Filter>Header Files\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation\PathFollowController.h">
+      <Filter>Header Files\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="physic\Abstract_BoundingBox.h">
+      <Filter>Header Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="physic\BoundingSphere.h">
+      <Filter>Header Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\EngineMath.h">
+      <Filter>Header Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\CombinedEngineScene.h">
+      <Filter>Header Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="physic\AABB_BoudingBox.h">
+      <Filter>Header Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="physic\Physical_Object.h">
+      <Filter>Header Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="physic\RigidBodySimulator.h">
+      <Filter>Header Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="physic\CombinedEnginePhysics.h">
+      <Filter>Header Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="physic\CollisionDetection.h">
+      <Filter>Header Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="physic\Velocity.h">
+      <Filter>Header Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="physic\Physical_Force.h">
+      <Filter>Header Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation\CombineEngineAnimation.h">
+      <Filter>Header Files\Animation</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CombineEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Eular_Angle.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Fixed_Angle.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Interpolation.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Mat4.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Quaternion.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Vec2.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Spatial.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Transformation.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Pivot.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Scene.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Phong_Material.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Object.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Node.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Model.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Camera.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Instance_Model.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Light.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Material.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="physic\Abstract_BoundingBox.cpp">
+      <Filter>Source Files\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="physic\BoundingSphere.cpp">
+      <Filter>Source Files\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="physic\AABB_BoudingBox.cpp">
+      <Filter>Source Files\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="physic\Physical_Object.cpp">
+      <Filter>Source Files\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="physic\RigidBodySimulator.cpp">
+      <Filter>Source Files\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="physic\CollisionDetection.cpp">
+      <Filter>Source Files\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="physic\Velocity.cpp">
+      <Filter>Source Files\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation\Controller.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation\PathFollowController.cpp">
+      <Filter>Source Files\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation\Boid.cpp">
+      <Filter>Source Files\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation\Crowd.cpp">
+      <Filter>Source Files\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation\KeyFrameController.cpp">
+      <Filter>Source Files\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="physic\Physical_Force.cpp">
+      <Filter>Source Files\Physics</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd">
+      <Filter>Header Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>
