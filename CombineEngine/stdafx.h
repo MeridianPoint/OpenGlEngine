@@ -19,7 +19,7 @@
 #include <vector>
 #include <iostream>
 #include <fstream>
-
+#include <string>
 //relative
 #include "Math\EngineMath.h"
 #include "Scene\CombinedEngineScene.h"

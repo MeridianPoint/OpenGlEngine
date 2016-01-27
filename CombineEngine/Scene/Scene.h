@@ -6,6 +6,10 @@
 
 #include "stdafx.h"
 
+class Crowd;
+class RigidBodySimulator;
+class Controller;
+
 class Scene
 {
 public:
@@ -151,7 +155,7 @@ public:
 		/*for (unsigned int i = 0; i < AnimationControllerList.size(); i++){
 			AnimationControllerList[i]->Update((float)time);
 		}*/
-		crowdControl->Update(time);
+		//crowdControl->Update(time);
 	}
 
 	void AddCrowdControl(Crowd* pCrowControl){

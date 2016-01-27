@@ -1,36 +1,69 @@
-﻿Build started 1/7/2016 2:10:26 PM.
+﻿Build started 1/27/2016 4:27:03 PM.
      1>Project "D:\VSProjects\Personal Project\CombineEngine\CombineEngine\CombineEngine.vcxproj" on node 2 (Build target(s)).
-     1>ClCompile:
-         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\VSProjects\Personal Project\CombineEngine\CombineEngine\\" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\CombineEngine.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
-         stdafx.cpp
-     1>d:\vsprojects\personal project\combineengine\combineengine\scene\camera.h(11): warning C4305: 'initializing' : truncation from 'double' to 'const float'
-     1>d:\vsprojects\personal project\combineengine\combineengine\scene\camera.h(12): warning C4305: 'initializing' : truncation from 'double' to 'const float'
-     1>d:\vsprojects\personal project\combineengine\combineengine\scene\camera.h(13): warning C4305: 'initializing' : truncation from 'double' to 'const float'
-     1>d:\vsprojects\personal project\combineengine\combineengine\scene\camera.h(14): warning C4305: 'initializing' : truncation from 'double' to 'const float'
-     1>d:\vsprojects\personal project\combineengine\combineengine\scene\model.h(70): error C2143: syntax error : missing ';' before '*'
-     1>d:\vsprojects\personal project\combineengine\combineengine\scene\model.h(70): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-     1>d:\vsprojects\personal project\combineengine\combineengine\scene\scene.h(17): error C2065: 'Controller' : undeclared identifier
-     1>d:\vsprojects\personal project\combineengine\combineengine\scene\scene.h(17): error C2059: syntax error : '>'
-     1>d:\vsprojects\personal project\combineengine\combineengine\scene\scene.h(17): error C2976: 'std::vector' : too few template arguments
-                 d:\program files (x86)\microsoft visual studio 12.0\vc\include\vector(650) : see declaration of 'std::vector'
-     1>d:\vsprojects\personal project\combineengine\combineengine\scene\scene.h(21): error C2143: syntax error : missing ';' before '*'
-     1>d:\vsprojects\personal project\combineengine\combineengine\scene\scene.h(21): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-     1>d:\vsprojects\personal project\combineengine\combineengine\scene\scene.h(25): error C2143: syntax error : missing ';' before '*'
-     1>d:\vsprojects\personal project\combineengine\combineengine\scene\scene.h(25): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-     1>d:\vsprojects\personal project\combineengine\combineengine\scene\scene.h(157): error C2061: syntax error : identifier 'Crowd'
-     1>d:\vsprojects\personal project\combineengine\combineengine\scene\scene.h(51): error C2662: '_Vector_alloc<!std::is_empty<_Alloc_types::_Alloc>::value,std::_Vec_base_types<_Ty,_Alloc_types::_Alloc>>::size_type std::vector<_Ty,_Alloc>::size(void) throw() const' : cannot convert 'this' pointer from 'std::vector' to 'const std::vector<_Ty,_Alloc> &'
-                 Reason: cannot convert from 'std::vector' to 'const std::vector<_Ty,_Alloc>'
-                 Conversion requires a second user-defined-conversion operator or constructor
-     1>d:\vsprojects\personal project\combineengine\combineengine\scene\scene.h(123): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
-     1>d:\vsprojects\personal project\combineengine\combineengine\scene\scene.h(154): error C2065: 'crowdControl' : undeclared identifier
-     1>d:\vsprojects\personal project\combineengine\combineengine\scene\scene.h(154): error C2227: left of '->Update' must point to class/struct/union/generic type
-                 type is 'unknown-type'
-     1>d:\vsprojects\personal project\combineengine\combineengine\scene\scene.h(158): error C2065: 'crowdControl' : undeclared identifier
-     1>d:\vsprojects\personal project\combineengine\combineengine\scene\scene.h(158): error C2065: 'pCrowControl' : undeclared identifier
-     1>d:\vsprojects\personal project\combineengine\combineengine\physic\velocity.h(69): warning C4172: returning address of local variable or temporary
-     1>d:\vsprojects\personal project\combineengine\combineengine\physic\velocity.h(76): warning C4172: returning address of local variable or temporary
+     1>Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\VSProjects\Personal Project\CombineEngine\Debug\CombineEngine.exe" /INCREMENTAL /NOLOGO glew32.lib glfw3.lib glu32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\VSProjects\Personal Project\CombineEngine\Debug\CombineEngine.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\VSProjects\Personal Project\CombineEngine\Debug\CombineEngine.lib" /MACHINE:X86 Debug\Boid.obj
+         Debug\Controller.obj
+         Debug\Crowd.obj
+         Debug\KeyFrameController.obj
+         Debug\PathFollowController.obj
+         Debug\CombineEngine.obj
+         Debug\Eular_Angle.obj
+         Debug\Fixed_Angle.obj
+         Debug\Interpolation.obj
+         Debug\Mat4.obj
+         Debug\Quaternion.obj
+         Debug\Vec2.obj
+         Debug\AABB_BoudingBox.obj
+         Debug\Abstract_BoundingBox.obj
+         Debug\BoundingSphere.obj
+         Debug\CollisionDetection.obj
+         Debug\Physical_Force.obj
+         Debug\Physical_Object.obj
+         Debug\RigidBodySimulator.obj
+         Debug\Velocity.obj
+         Debug\Camera.obj
+         Debug\Instance_Model.obj
+         Debug\Light.obj
+         Debug\Material.obj
+         Debug\Model.obj
+         Debug\Node.obj
+         Debug\Object.obj
+         Debug\Phong_Material.obj
+         Debug\Pivot.obj
+         Debug\Scene.obj
+         Debug\Spatial.obj
+         Debug\Transformation.obj
+         Debug\stdafx.obj
+     1>LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+     1>CombineEngine.obj : error LNK2019: unresolved external symbol __imp__glClear@4 referenced in function "public: void __thiscall Scene::Draw(void)" (?Draw@Scene@@QAEXXZ)
+     1>glfw3.lib(window.obj) : error LNK2001: unresolved external symbol __imp__glClear@4
+     1>CombineEngine.obj : error LNK2019: unresolved external symbol __imp__glClearColor@16 referenced in function "public: void __thiscall Scene::Draw(void)" (?Draw@Scene@@QAEXXZ)
+     1>CombineEngine.obj : error LNK2019: unresolved external symbol __imp__glEnable@4 referenced in function "public: void __thiscall Scene::Draw(void)" (?Draw@Scene@@QAEXXZ)
+     1>CombineEngine.obj : error LNK2019: unresolved external symbol __imp__glLoadIdentity@0 referenced in function "public: void __thiscall Scene::Draw(void)" (?Draw@Scene@@QAEXXZ)
+     1>Instance_Model.obj : error LNK2001: unresolved external symbol __imp__glLoadIdentity@0
+     1>Model.obj : error LNK2001: unresolved external symbol __imp__glLoadIdentity@0
+     1>CombineEngine.obj : error LNK2019: unresolved external symbol __imp__glMatrixMode@4 referenced in function "public: void __thiscall Scene::Draw(void)" (?Draw@Scene@@QAEXXZ)
+     1>Instance_Model.obj : error LNK2001: unresolved external symbol __imp__glMatrixMode@4
+     1>Model.obj : error LNK2001: unresolved external symbol __imp__glMatrixMode@4
+     1>Instance_Model.obj : error LNK2019: unresolved external symbol __imp__glLoadMatrixf@4 referenced in function "public: virtual void __thiscall Instance_Model::ClassicDraw(int,int)" (?ClassicDraw@Instance_Model@@UAEXHH@Z)
+     1>Model.obj : error LNK2001: unresolved external symbol __imp__glLoadMatrixf@4
+     1>Model.obj : error LNK2019: unresolved external symbol __imp__glBegin@4 referenced in function "public: virtual void __thiscall Model::ClassicDraw(int,int)" (?ClassicDraw@Model@@UAEXHH@Z)
+     1>Model.obj : error LNK2019: unresolved external symbol __imp__glColor3f@12 referenced in function "public: virtual void __thiscall Model::ClassicDraw(int,int)" (?ClassicDraw@Model@@UAEXHH@Z)
+     1>Model.obj : error LNK2019: unresolved external symbol __imp__glDrawArrays@12 referenced in function "public: void __thiscall Model::VBODraw(void)" (?VBODraw@Model@@QAEXXZ)
+     1>Model.obj : error LNK2019: unresolved external symbol __imp__glEnd@0 referenced in function "public: virtual void __thiscall Model::ClassicDraw(int,int)" (?ClassicDraw@Model@@UAEXHH@Z)
+     1>Model.obj : error LNK2019: unresolved external symbol __imp__glNormal3fv@4 referenced in function "public: virtual void __thiscall Model::ClassicDraw(int,int)" (?ClassicDraw@Model@@UAEXHH@Z)
+     1>Model.obj : error LNK2019: unresolved external symbol __imp__glTexCoord2fv@4 referenced in function "public: virtual void __thiscall Model::ClassicDraw(int,int)" (?ClassicDraw@Model@@UAEXHH@Z)
+     1>Model.obj : error LNK2019: unresolved external symbol __imp__glVertex3fv@4 referenced in function "public: virtual void __thiscall Model::ClassicDraw(int,int)" (?ClassicDraw@Model@@UAEXHH@Z)
+     1>glfw3.lib(context.obj) : error LNK2019: unresolved external symbol __imp__glGetIntegerv@8 referenced in function __glfwRefreshContextAttribs
+     1>glfw3.lib(context.obj) : error LNK2019: unresolved external symbol __imp__glGetString@4 referenced in function _glfwExtensionSupported
+     1>glfw3.lib(wgl_context.obj) : error LNK2019: unresolved external symbol __imp__wglCreateContext@4 referenced in function __glfwCreateContext
+     1>glfw3.lib(wgl_context.obj) : error LNK2019: unresolved external symbol __imp__wglDeleteContext@4 referenced in function __glfwDestroyContext
+     1>glfw3.lib(wgl_context.obj) : error LNK2019: unresolved external symbol __imp__wglGetProcAddress@4 referenced in function __glfwPlatformGetProcAddress
+     1>glfw3.lib(wgl_context.obj) : error LNK2019: unresolved external symbol __imp__wglMakeCurrent@8 referenced in function __glfwPlatformMakeContextCurrent
+     1>glfw3.lib(wgl_context.obj) : error LNK2019: unresolved external symbol __imp__wglShareLists@8 referenced in function __glfwCreateContext
+     1>D:\VSProjects\Personal Project\CombineEngine\Debug\CombineEngine.exe : fatal error LNK1120: 20 unresolved externals
      1>Done Building Project "D:\VSProjects\Personal Project\CombineEngine\CombineEngine\CombineEngine.vcxproj" (Build target(s)) -- FAILED.
 
 Build FAILED.
 
-Time Elapsed 00:00:01.52
+Time Elapsed 00:00:00.22

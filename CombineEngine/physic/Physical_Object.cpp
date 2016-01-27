@@ -62,17 +62,17 @@ std::vector<Physical_Force*> Physical_Object::getALLForces(){
 }
 
 void Physical_Object::GetBoudingSphere(){
-	BoundingSphere = object->CalculateBoudingSphere();
+	//BoundingSphere = object->CalculateBoudingSphere();
 }
 
 Vec3f Physical_Object::getPosition(){
 	//
-	return object->getPosition();
+	return object->GetPosition();
 }
 
 void Physical_Object::UpdateBoudingSphere(){
 	//
-	BoundingSphere->SetPosition(object->getPosition());
+	BoundingSphere->SetPosition(object->GetPosition());
 	int i = 1;
 }
 

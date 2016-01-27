@@ -21,6 +21,10 @@ enum VolumeType {VT_AABB,VT_SPHERE,VT_OBB};
 
 const float PI=3.1415926f;
 
+
+//
+class Abstract_BoundingBox;
+
 class Model :public Spatial 
 {
 protected:

@@ -245,9 +245,6 @@
     <ClCompile Include="physic\Velocity.cpp">
       <Filter>Source Files\Physics</Filter>
     </ClCompile>
-    <ClCompile Include="Animation\Controller.cpp">
-      <Filter>Source Files\math</Filter>
-    </ClCompile>
     <ClCompile Include="Animation\PathFollowController.cpp">
       <Filter>Source Files\Animation</Filter>
     </ClCompile>
@@ -262,6 +259,9 @@
     </ClCompile>
     <ClCompile Include="physic\Physical_Force.cpp">
       <Filter>Source Files\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation\Controller.cpp">
+      <Filter>Source Files\Animation</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
